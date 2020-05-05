@@ -1,0 +1,72 @@
+/* основной цвет текста #757575 */
+/* вторичный цвет текста #212121 */
+/* цвет текста контактов 
+в подвале rgba(255, 255, 255, 0.6) */
+/* цвет лого + hover #2196F3 */
+/* bgc header #FFFFFF */
+/* bgc footer #2F303A*/
+/* bgc main-1 #E5E5E5 */
+/* bgc main-2 #F5F4FA */
+
+body {
+  color: #757575;
+  background-color: #e5e5e5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* HEADER */
+header {
+  background-color: #ffffff;
+}
+
+.logo {
+  color: #212121;
+}
+
+.logo span {
+  color: #2196f3;
+}
+
+.nav-link {
+  color: #212121;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #2196f3;
+}
+
+.feedback-header {
+  color: #757575;
+}
+
+.feedback-header:hover,
+.feedback-header:focus {
+  color: #2196f3;
+}
+
+/* FOOTER */
+
+footer {
+  color: #ffffff;
+  background-color: #2f303a;
+}
+
+.logo-footer {
+  color: #ffffff;
+}
+
+.feedback-footer {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.4);
+}
