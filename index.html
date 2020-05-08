@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>goit-markup-hw-02</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -12,9 +16,11 @@
     <!-- Шапка сайта -->
     <header>
       <nav>
-        <a href="./index.html" lang="en" class="logo"><span>Web</span>Studio</a>
+        <a href="./index.html" lang="en" class="logo"
+          >Web<span class="logo-part">Studio</span></a
+        >
         <ul>
-          <li><a href="" class="nav-link">Студия</a></li>
+          <li><a href="./index.html" class="nav-link">Студия</a></li>
           <li><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
           <li><a href="" class="nav-link">Контакты</a></li>
         </ul>
@@ -34,9 +40,9 @@
     </header>
     <main>
       <!-- Секция Герой -->
-      <section>
-        <h1>эффективные решения для вашего бизнеса</h1>
-        <a href="">Заказать услугу</a>
+      <section class="hero">
+        <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
+        <a href="" class="hero-order">Заказать услугу</a>
       </section>
       <!-- Секция навыки -->
       <section>
@@ -89,7 +95,7 @@
               height="294"
             />
             <a href="">
-              <h3>Десктопные приложения</h3>
+              <p class="services">Десктопные приложения</p>
             </a>
           </li>
           <li>
@@ -100,7 +106,7 @@
               height="294"
             />
             <a href="">
-              <h3>Мобильные приложения</h3>
+              <p class="services">Мобильные приложения</p>
             </a>
           </li>
           <li>
@@ -111,13 +117,13 @@
               height="294"
             />
             <a href="">
-              <h3>Дизайнерские решения</h3>
+              <p class="services">Дизайнерские решения</p>
             </a>
           </li>
         </ul>
       </section>
       <!-- Наша команда -->
-      <section>
+      <section class="our-team">
         <h2>Наша команда</h2>
         <ul>
           <li>
@@ -128,7 +134,7 @@
               height="260"
             />
             <h4>John Smith</h4>
-            <p>Product Designer</p>
+            <p class="profession">Product Designer</p>
             <ul>
               <li>
                 <a
@@ -164,7 +170,7 @@
               height="260"
             />
             <h4>Marta Stewart</h4>
-            <p>Frontend Developer</p>
+            <p class="profession">Frontend Developer</p>
             <ul>
               <li>
                 <a
@@ -200,7 +206,7 @@
               height="260"
             />
             <h4>Robert Jakis</h4>
-            <p>Marketing</p>
+            <p class="profession">Marketing</p>
             <ul>
               <li>
                 <a
@@ -236,7 +242,7 @@
               height="260"
             />
             <h4>Martin Doe</h4>
-            <p>UI Designer</p>
+            <p class="profession">UI Designer</p>
             <ul>
               <li>
                 <a
@@ -294,8 +300,8 @@
     <!-- Подвал -->
     <footer>
       <div>
-        <a href="./index.html" lang="en" class="logo logo-footer"
-          ><span>Web</span>Studio</a
+        <a href="./index.html" lang="en" class="logo"
+          >Web<span class="logo-part">Studio</span></a
         >
         <p>г. Киев, пр-т Леси Украинки, 26</p>
         <ul>

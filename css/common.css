@@ -9,9 +9,14 @@
 /* bgc main-2 #F5F4FA */
 
 body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
   color: #757575;
   background-color: #e5e5e5;
-  letter-spacing: 0.06em;
 }
 
 a {
@@ -28,15 +33,26 @@ header {
 }
 
 .logo {
-  color: #212121;
+  color: #2196f3;
+
+  font-family: "Raleway", sans-serif;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
 }
 
-.logo span {
-  color: #2196f3;
+header .logo-part {
+  color: #212121;
 }
 
 .nav-link {
   color: #212121;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 }
 
 .nav-link:hover,
@@ -60,7 +76,7 @@ footer {
   background-color: #2f303a;
 }
 
-.logo-footer {
+footer .logo-part {
   color: #ffffff;
 }
 
@@ -69,5 +85,9 @@ footer {
 }
 
 .copyright {
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+
   color: rgba(255, 255, 255, 0.4);
 }
