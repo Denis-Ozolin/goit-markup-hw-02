@@ -1,13 +1,29 @@
 /* основной цвет текста #757575 */
 /* вторичный цвет текста #212121 */
+
 /* цвет текста контактов 
 в подвале rgba(255, 255, 255, 0.6) */
-/* цвет лого + hover #2196F3 */
-/* bgc header #FFFFFF */
-/* bgc footer #2F303A*/
-/* bgc main-1 #E5E5E5 */
-/* bgc main-2 #F5F4FA */
 
+/* акцентированный цвет #2196F3 */
+/* акцентированный белый и фон хедер #FFFFFF */
+
+/* bgc основной #E5E5E5 */
+/* bgc вторичный #F5F4FA */
+/* bgc footer #2F303A*/
+
+/* ПЕРЕМЕННЫЕ */
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+
+  --primary-bgc: #e5e5e5;
+  --secondary-bgc: #f5f4fa;
+  --bgc-accent-white: #ffffff;
+  --bgc-footer: #2f303a;
+}
+
+/* ОБЩИЕ СТИЛИ */
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -15,9 +31,10 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
 
-  color: #757575;
-  background-color: #e5e5e5;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bgc);
 }
+/* СБРОС СТИЛЕЙ */
 
 a {
   text-decoration: none;
@@ -29,11 +46,11 @@ ul {
 
 /* HEADER */
 header {
-  background-color: #ffffff;
+  background-color: var(--bgc-accent-white);
 }
 
 .logo {
-  color: #2196f3;
+  color: var(--accent-color);
 
   font-family: "Raleway", sans-serif;
   font-family: Raleway;
@@ -43,11 +60,11 @@ header {
 }
 
 header .logo-part {
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
 .nav-link {
-  color: #212121;
+  color: var(--secondary-text-color);
 
   font-weight: 500;
   font-size: 14px;
@@ -57,27 +74,31 @@ header .logo-part {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+
+.current {
+  color: var(--accent-color);
 }
 
 .feedback-header {
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .feedback-header:hover,
 .feedback-header:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* FOOTER */
 
 footer {
-  color: #ffffff;
-  background-color: #2f303a;
+  color: var(--bgc-accent-white);
+  background-color: var(--bgc-footer);
 }
 
 footer .logo-part {
-  color: #ffffff;
+  color: var(--bgc-accent-white);
 }
 
 .feedback-footer {
